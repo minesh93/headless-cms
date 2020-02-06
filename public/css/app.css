@@ -1,0 +1,130 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 2rem;
+}
+
+.grid .col {
+  grid-column: col-start/span 12;
+}
+
+.grid .col.col-1 {
+  grid-column-start: span 1;
+}
+
+.grid .col.col-2 {
+  grid-column-start: span 2;
+}
+
+.grid .col.col-3 {
+  grid-column-start: span 3;
+}
+
+.grid .col.col-4 {
+  grid-column-start: span 4;
+}
+
+.grid .col.col-5 {
+  grid-column-start: span 5;
+}
+
+.grid .col.col-6 {
+  grid-column-start: span 6;
+}
+
+.grid .col.col-7 {
+  grid-column-start: span 7;
+}
+
+.grid .col.col-8 {
+  grid-column-start: span 8;
+}
+
+.grid .col.col-9 {
+  grid-column-start: span 9;
+}
+
+.grid .col.col-10 {
+  grid-column-start: span 10;
+}
+
+.grid .col.col-11 {
+  grid-column-start: span 11;
+}
+
+.grid .col.col-12 {
+  grid-column-start: span 12;
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email] {
+  border: 2px solid #CFD8DC;
+  background: #CFD8DC;
+  font-family: "Nunito";
+  height: 3rem;
+  padding: 0 0.5rem;
+  display: block;
+  width: 100%;
+  font-weight: 1.3rem;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type=text]:focus,
+input[type=text]:active,
+input[type=password]:focus,
+input[type=password]:active,
+input[type=tel]:focus,
+input[type=tel]:active,
+input[type=email]:focus,
+input[type=email]:active {
+  border-color: #512da8;
+}
+
+label {
+  font-weight: 1.3rem;
+  font-weight: 700;
+}
+
+.input-wrap label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.input-wrap .description {
+  display: block;
+  font-size: 1.2rem;
+  color: #37474f;
+  margin: 0.2rem 0;
+}
+
+.sink {
+  padding: 0 4rem;
+}
+
+.sink .grid .col.first {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #512da8;
+  color: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito";
+  font-size: 62.5%;
+  background: #eceff1;
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 0;
+}
+

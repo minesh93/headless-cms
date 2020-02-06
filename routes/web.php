@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/login', 'Auth\LoginController@getLogin');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('sink');
 });

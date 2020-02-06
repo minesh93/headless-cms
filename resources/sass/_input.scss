@@ -1,0 +1,39 @@
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"] {
+    border: 2px solid $off-white-2;
+    background: $off-white-2;
+    font-family: 'Nunito';
+    height: 3rem;
+    padding: 0 0.5rem;
+    display: block;
+    width: 100%;
+    font-weight: 1.3rem;
+    border-radius: 2px;
+    outline: none;
+
+    &:focus,
+    &:active {
+        border-color: $purple;
+    }
+}
+
+label {
+    font-weight: 1.3rem;
+    font-weight: 700;
+}
+
+.input-wrap {
+    label {
+        display: block;
+        margin-bottom: 0.3rem;
+    }
+
+    .description {
+        display: block;
+        font-size: 1.2rem;
+        color: $base;
+        margin: 0.2rem 0;
+    }
+}

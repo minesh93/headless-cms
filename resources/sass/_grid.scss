@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 2rem;
+
+    .col {
+        grid-column: col-start / span 12;
+
+        @for $i from 1 through 12 {
+            &.col-#{$i} {
+                grid-column-start: span $i;
+            }
+        }
+    }
+}
+

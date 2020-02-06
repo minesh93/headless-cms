@@ -1,1 +1,19 @@
-//
+@import 'variables.scss';
+@import 'grid.scss';
+@import 'input.scss';
+@import 'sink.scss';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito';
+    font-size: 62.5%;
+    background: $off-white-1;
+}
+
+body {
+    font-size: 1.4rem;
+    margin: 0;
+}
