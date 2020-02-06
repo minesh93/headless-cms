@@ -60,14 +60,14 @@ input[type=text],
 input[type=password],
 input[type=tel],
 input[type=email] {
-  border: 2px solid #CFD8DC;
-  background: #CFD8DC;
+  border: 2px solid #fefefe;
+  background: #fefefe;
   font-family: "Nunito";
   height: 3rem;
   padding: 0 0.5rem;
   display: block;
   width: 100%;
-  font-weight: 1.3rem;
+  font-size: 1.4rem;
   border-radius: 2px;
   outline: none;
 }
@@ -83,8 +83,25 @@ input[type=email]:active {
   border-color: #512da8;
 }
 
+textarea {
+  display: block;
+  border: 2px solid #fefefe;
+  background: #fefefe;
+  width: 100%;
+  resize: vertical;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  outline: none;
+  font-family: "Nunito";
+}
+
+textarea:focus,
+textarea:active {
+  border-color: #512da8;
+}
+
 label {
-  font-weight: 1.3rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
@@ -93,11 +110,50 @@ label {
   margin-bottom: 0.3rem;
 }
 
-.input-wrap .description {
+.check-wrap {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.check-wrap.inline {
+  display: flex;
+}
+
+.check-wrap.inline label {
+  margin-right: 1.5rem;
+}
+
+.check-wrap label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check-wrap span {
+  font-size: 1.4rem;
+}
+
+.input-wrap .description,
+.check-wrap .description {
   display: block;
   font-size: 1.2rem;
   color: #37474f;
   margin: 0.2rem 0;
+}
+
+.form-wrap {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+button {
+  height: 4rem;
+  border-radius: 2px;
+  border: none;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-size: 1.4rem;
+  background: linear-gradient(15deg, #673ab7 30%, #512da8 50%, #311b92 100%);
 }
 
 .sink {
@@ -126,5 +182,20 @@ html {
 body {
   font-size: 1.4rem;
   margin: 0;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.login form {
+  border-radius: 2px;
+  width: 30rem;
+  padding: 4rem 2rem;
 }
 

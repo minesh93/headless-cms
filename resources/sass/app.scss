@@ -17,3 +17,19 @@ body {
     font-size: 1.4rem;
     margin: 0;
 }
+
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    form {
+        border-radius: 2px;
+        width: 30rem;
+        padding: 4rem 2rem;
+    }
+}

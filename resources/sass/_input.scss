@@ -2,14 +2,14 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="email"] {
-    border: 2px solid $off-white-2;
-    background: $off-white-2;
+    border: 2px solid $input-white;
+    background: $input-white;
     font-family: 'Nunito';
     height: 3rem;
     padding: 0 0.5rem;
     display: block;
     width: 100%;
-    font-weight: 1.3rem;
+    font-size: 1.4rem;
     border-radius: 2px;
     outline: none;
 
@@ -19,8 +19,25 @@ input[type="email"] {
     }
 }
 
+textarea {
+    display: block;
+    border: 2px solid $input-white;
+    background: $input-white;
+    width: 100%;
+    resize: vertical;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'Nunito';
+
+    &:focus,
+    &:active {
+        border-color: $purple;
+    }
+}
+
 label {
-    font-weight: 1.3rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -29,11 +46,52 @@ label {
         display: block;
         margin-bottom: 0.3rem;
     }
+}
 
+.check-wrap {
+    display: grid;
+    grid-gap: 1.5rem;
+
+    &.inline {
+        display: flex;
+        label {
+            margin-right: 1.5rem;
+        }
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 1.4rem;
+    }
+}
+
+.input-wrap,
+.check-wrap {
     .description {
         display: block;
         font-size: 1.2rem;
         color: $base;
         margin: 0.2rem 0;
     }
+}
+
+
+.form-wrap {
+    display: grid;
+    grid-gap: 2rem;
+}
+
+button {
+    height: 4rem;
+    border-radius: 2px;
+    border: none;
+    color: $white;
+    font-family: 'Nunito';
+    font-size: 1.4rem;
+    background: linear-gradient(15deg, $purple-light 30%, $purple 50%, $purple-deep 100%);
 }
