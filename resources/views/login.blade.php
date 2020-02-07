@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 @section('content')
 <main class="login">
     <form method="POST" action="/login">

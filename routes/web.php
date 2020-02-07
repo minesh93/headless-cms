@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/sink', 'TestController@sink');
+Route::get('/', 'TestController@sink');
 
-Route::get('/login', 'Auth\LoginController@getLogin');
+Route::get('login', 'Auth\LoginController@getLogin');
 Route::post('/login', 'Auth\LoginController@attemptLogin');
 
-Route::get('/', function () {
-    return view('sink');
-});
+Route::get('/dashboard', 'Admin\DashboardController@view');

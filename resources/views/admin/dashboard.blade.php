@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.layout-admin')
 @section('content')
 <main class="sink">
     <div class="grid first">

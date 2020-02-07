@@ -1,0 +1,24 @@
+.admin-wrap {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    min-height: 100vh;
+
+    .sidebar {
+        background: $base;
+        color: $off-white-1;
+        padding: 4rem 2rem;
+
+        .sidebar-title {
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+        }
+
+        .nav-section {
+            margin-bottom: 4rem;
+            .section-title {
+                color: $off-white-2;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

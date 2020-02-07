@@ -183,6 +183,32 @@ button.error {
   color: #ffffff;
 }
 
+.admin-wrap {
+  display: grid;
+  grid-template-columns: 30rem 1fr;
+  min-height: 100vh;
+}
+
+.admin-wrap .sidebar {
+  background: #37474f;
+  color: #eceff1;
+  padding: 4rem 2rem;
+}
+
+.admin-wrap .sidebar .sidebar-title {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+.admin-wrap .sidebar .nav-section {
+  margin-bottom: 4rem;
+}
+
+.admin-wrap .sidebar .nav-section .section-title {
+  color: #CFD8DC;
+  font-size: 1.3rem;
+}
+
 *,
 *:before,
 *:after {
