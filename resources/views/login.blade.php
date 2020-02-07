@@ -1,18 +1,19 @@
 @extends('layout')
 @section('content')
 <main class="login">
-    <h1>Login</h1>
-    <form>
+    <form method="POST" action="/login">
+        <h1>Login</h1>
+        @csrf
         <div class="form-wrap">
             <div class="input-wrap">
-                <label>Username</label>
-                <input type="text"/>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"/>
             </div>
             <div class="input-wrap">
-                <label>Password</label>
-                <input type="password"/>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"/>
             </div>
-            <button>Do Nothing</button>
+            <button class="action" type="submit">Do Nothing</button>
         </div>
     </form>
 </main>

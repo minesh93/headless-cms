@@ -28,7 +28,9 @@ textarea {
     font-size: 1.4rem;
     border-radius: 2px;
     outline: none;
+    padding: 0.5rem;
     font-family: 'Nunito';
+    min-height: 6rem;
 
     &:focus,
     &:active {
@@ -93,5 +95,19 @@ button {
     color: $white;
     font-family: 'Nunito';
     font-size: 1.4rem;
-    background: linear-gradient(15deg, $purple-light 30%, $purple 50%, $purple-deep 100%);
+    background: $teal;
+    outline: none;
+    cursor: pointer;
+
+    &.secondary {
+        background: $base;
+    }
+
+    &.action {
+        background: linear-gradient(300deg, $purple-light 20%, $purple 50%, $purple-deep 75%);
+    }
+
+    &.error {
+        background: $red-deep;
+    }
 }

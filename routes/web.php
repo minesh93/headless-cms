@@ -12,6 +12,7 @@
 */
 
 Route::get('/login', 'Auth\LoginController@getLogin');
+Route::post('/login', 'Auth\LoginController@attemptLogin');
 
 Route::get('/', function () {
     return view('sink');
