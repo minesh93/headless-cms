@@ -41,7 +41,7 @@
         </div>
         <div class="col col-1">
             <div class="check-wrap">
-                <label>Checkboxes</label>
+                <h2>Checkbox</h2>
                 <div class="check-wrap">
                     <label for="check-1">
                         <input type="checkbox" id="check-1"> <span>Option 1</span>
@@ -58,7 +58,7 @@
 
         <div class="col col-3">
             <div class="check-wrap">
-                <label>Inline</label>
+                <h2>Inline</h2>
                 <div class="check-wrap inline">
                     <label for="check-4">
                         <input type="checkbox" id="check-4"> <span>Option 4</span>
@@ -74,9 +74,9 @@
             </div>
         </div>
 
-        <div class="col col-2">
+        <div class="col col-5">
             <div class="check-wrap">
-                <label>Radio</label>
+                <h2>Radio</h2>
                 <div class="check-wrap">
                     <label for="radio-1">
                         <input type="radio" name="radio-test" value="1" id="radio-1"> <span>Option 1</span>
@@ -90,6 +90,21 @@
                 </div>
                 <span class="description">Or description above. </span>
             </div>
+        </div>
+
+        <div class="col col-6">
+            <h2>Titles</h2>
+            <h1>H1 Title</h1>
+            <h2>H2 Title</h2>
+            <h3>H3 Title</h3>
+            <h4>H4 Title</h4>
+            <h5>H5 Title</h5>
+        </div>
+
+        <div class="col col-3">
+            <h2>Typography</h2>
+            <p>This is what a p tag looks like. <br/></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero libero dicta labore nostrum doloremque asperiores sunt blanditiis, officia perspiciatis earum autem! Cum adipisci perferendis officia voluptate, error facilis non!</p>
         </div>
     </div>
 </main>

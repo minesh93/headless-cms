@@ -56,6 +56,41 @@
   grid-column-start: span 12;
 }
 
+h1 {
+  font-weight: 500;
+  margin: 2rem 0;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 2rem 0;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-weight: 500;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+h4 {
+  font-weight: 500;
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-weight: 600;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 2rem;
+  margin: 0;
+}
+
 input[type=text],
 input[type=password],
 input[type=tel],
@@ -170,6 +205,10 @@ button.action {
 
 button.error {
   background: #d52020;
+}
+
+.sink {
+  padding: 4rem;
 }
 
 .sink .grid .col.first {
