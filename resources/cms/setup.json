@@ -1,0 +1,15 @@
+{
+    "types": {
+        "post": {
+            "name_singular": "Post",
+            "name_plural": "Posts",
+            "key": ""
+        },
+
+        "page": {
+            "name_singular": "Page",
+            "name_plural": "Pages",
+            "key": ""
+        }
+    }
+}

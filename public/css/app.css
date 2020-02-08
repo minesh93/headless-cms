@@ -253,6 +253,15 @@ button.error {
   margin-bottom: 1rem;
 }
 
+.admin-wrap .sidebar .nav-section .nav-list li a {
+  color: #eceff1;
+  transition: color 0.2s ease-in-out;
+}
+
+.admin-wrap .sidebar .nav-section .nav-list li a:hover {
+  color: #CFD8DC;
+}
+
 .admin-wrap .content {
   padding: 2rem 4rem;
 }
