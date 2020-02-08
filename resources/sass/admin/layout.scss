@@ -15,9 +15,19 @@
 
         .nav-section {
             margin-bottom: 4rem;
+
             .section-title {
                 color: $off-white-2;
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .nav-list {
                 font-size: 1.3rem;
+
+                li {
+                    margin-bottom: 1rem;
+                }
             }
         }
     }

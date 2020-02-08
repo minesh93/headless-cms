@@ -241,7 +241,16 @@ button.error {
 
 .admin-wrap .sidebar .nav-section .section-title {
   color: #CFD8DC;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-wrap .sidebar .nav-section .nav-list {
   font-size: 1.3rem;
+}
+
+.admin-wrap .sidebar .nav-section .nav-list li {
+  margin-bottom: 1rem;
 }
 
 .admin-wrap .content {
@@ -263,6 +272,16 @@ html {
 body {
   font-size: 1.4rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .login {

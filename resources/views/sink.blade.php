@@ -39,7 +39,7 @@
                 <input type="text"/>
             </div>
         </div>
-        <div class="col col-1">
+        <div class="col col-2">
             <div class="check-wrap">
                 <h2>Checkbox</h2>
                 <div class="check-wrap">
@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <div class="col col-5">
+        <div class="col col-1">
             <div class="check-wrap">
                 <h2>Radio</h2>
                 <div class="check-wrap">
@@ -92,6 +92,12 @@
             </div>
         </div>
 
+        <div class="col col-3">
+            <h2>Typography</h2>
+            <p>This is what a p tag looks like. <br/></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero libero dicta labore nostrum doloremque asperiores sunt blanditiis, officia perspiciatis earum autem! Cum adipisci perferendis officia voluptate, error facilis non!</p>
+        </div>
+
         <div class="col col-6">
             <h2>Titles</h2>
             <h1>H1 Title</h1>
@@ -101,11 +107,6 @@
             <h5>H5 Title</h5>
         </div>
 
-        <div class="col col-3">
-            <h2>Typography</h2>
-            <p>This is what a p tag looks like. <br/></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero libero dicta labore nostrum doloremque asperiores sunt blanditiis, officia perspiciatis earum autem! Cum adipisci perferendis officia voluptate, error facilis non!</p>
-        </div>
     </div>
 </main>
 @endsection
