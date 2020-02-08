@@ -172,10 +172,6 @@ button.error {
   background: #d52020;
 }
 
-.sink {
-  padding: 0 4rem;
-}
-
 .sink .grid .col.first {
   padding: 1.5rem;
   text-align: center;
@@ -207,6 +203,10 @@ button.error {
 .admin-wrap .sidebar .nav-section .section-title {
   color: #CFD8DC;
   font-size: 1.3rem;
+}
+
+.admin-wrap .content {
+  padding: 2rem 4rem;
 }
 
 *,
