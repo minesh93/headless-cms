@@ -98,7 +98,7 @@ input[type=email] {
   border: 2px solid #fefefe;
   background: #fefefe;
   font-family: "Nunito";
-  height: 3rem;
+  height: 4rem;
   padding: 0 0.5rem;
   display: block;
   width: 100%;
@@ -183,7 +183,9 @@ label {
   grid-gap: 2rem;
 }
 
+.button,
 button {
+  text-decoration: none;
   height: 4rem;
   border-radius: 2px;
   border: none;
@@ -192,17 +194,28 @@ button {
   font-size: 1.4rem;
   background: #00897b;
   outline: none;
+  text-align: center;
+  line-height: 4rem;
   cursor: pointer;
 }
 
+.button.full-width,
+button.full-width {
+  display: block;
+  width: 100%;
+}
+
+.button.secondary,
 button.secondary {
   background: #37474f;
 }
 
+.button.action,
 button.action {
   background: linear-gradient(300deg, #673ab7 20%, #512da8 50%, #311b92 75%);
 }
 
+.button.error,
 button.error {
   background: #d52020;
 }

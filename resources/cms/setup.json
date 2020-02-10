@@ -10,6 +10,11 @@
             "name_singular": "Page",
             "name_plural": "Pages",
             "key": ""
+        },
+        "experiments": {
+            "name_singular": "Experiment",
+            "name_plural": "Experiments",
+            "key": ""
         }
     }
 }
