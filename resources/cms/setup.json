@@ -3,7 +3,7 @@
         "post": {
             "name_singular": "Post",
             "name_plural": "Posts",
-            "key": ""
+            "key": "posts/"
         },
 
         "page": {
@@ -11,10 +11,11 @@
             "name_plural": "Pages",
             "key": ""
         },
+
         "experiments": {
             "name_singular": "Experiment",
             "name_plural": "Experiments",
-            "key": ""
+            "key": "experiments/"
         }
     }
 }
