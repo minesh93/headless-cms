@@ -18,3 +18,6 @@ Route::post('/login', 'Auth\LoginController@attemptLogin');
 
 Route::get('/dashboard', 'Admin\DashboardController@view');
 Route::get('/content/{type}','Admin\PostListController@getList');
+Route::get('/content/{type}/new','Admin\PostController@new');
+
+Route::post('/content/{type}/','Admin\PostController@update');

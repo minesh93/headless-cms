@@ -21,6 +21,7 @@ class PostListController extends Controller
     {
         $types = app('headless')->types;
         $selectedType = $types->{$type} ?? null;
+        $selectedType->post_key = $type;
         
         if(!$selectedType) {
             abort(404);
