@@ -8,6 +8,16 @@
                 <div class="input-wrap">
                     <input type="text" placeholder="Title" v-model="post.name"/>
                 </div>
+
+                <div class="post-content-wrap">
+                    @if(isset($type->content))
+                        @foreach ($type->content as $content)
+                            <div class="post-content content-{{ $content->key }}">
+                                @include("templates.{$content->template}")
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
             </div>
             <div class="col col-3 post-sidebar-wrap">
                 <div class="post-sidebar">

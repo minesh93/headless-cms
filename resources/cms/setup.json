@@ -3,7 +3,19 @@
         "post": {
             "name_singular": "Post",
             "name_plural": "Posts",
-            "key": "posts/"
+            "key": "posts/",
+            "content": [
+                {
+                    "key": "gallery",
+                    "type": "main",
+                    "template": "gallery"
+                }, 
+                {
+                    "key": "post_content",
+                    "type": "main",
+                    "template": "basic-post-content"
+                }
+            ]
         },
 
         "page": {

@@ -24,7 +24,7 @@ let app = new Vue({
             let endPoint = `/content/${this.type.post_key}`;
 
             axios.post(endPoint, this.post).then(response => {
-                console.log(response);
+                
             });
         }
     },

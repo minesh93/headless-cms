@@ -3,4 +3,16 @@
     padding: 2rem;
     position: sticky;
     border-radius: 2px;
+    border-radius: 2px;
+    top: 9rem;
+}
+
+.post-create-edit {
+    .post-content-wrap {
+        margin-top: 2rem;
+
+        .post-content {
+            padding: 2rem 0;
+        }
+    }
 }

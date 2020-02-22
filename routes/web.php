@@ -13,7 +13,7 @@
 Route::get('/sink', 'TestController@sink');
 Route::get('/', 'TestController@sink');
 
-Route::get('login', 'Auth\LoginController@getLogin');
+Route::get('/login', 'Auth\LoginController@getLogin')->name('login');
 Route::post('/login', 'Auth\LoginController@attemptLogin');
 
 Route::get('/dashboard', 'Admin\DashboardController@view');
