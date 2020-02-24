@@ -17,3 +17,13 @@ $input-white: #fefefe;
 
 $base: #37474f;
 $light-base: #585858;
+
+$mobile-screen: 767px;
+$tablet-screen: 768px;
+$landscape-screen: 1024px;
+$large-desktop-screen: 1440px;
+
+$mobile: "only screen and (max-width:#{$mobile-screen})";
+$tablet: "only screen and (min-width:#{$tablet-screen})";
+$landscape: "only screen and (min-width:#{$landscape-screen})";
+$large-desktop: "only screen and (min-width:#{$large-desktop-screen})";

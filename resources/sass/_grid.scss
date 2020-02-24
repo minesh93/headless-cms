@@ -1,16 +1,35 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-columns: repeat(2, [col-start] 1fr);
     grid-gap: 2rem;
 
-    .col {
-        grid-column: col-start / span 12;
+    @media #{$landscape} {
+        grid-template-columns: repeat(12, [col-start] 1fr);
+    }
 
+    .col {
+        grid-column: col-start / span 2;
         @for $i from 1 through 12 {
-            &.col-#{$i} {
-                grid-column-start: span $i;
+            @if($i < 5) {
+                &.col-#{$i} {
+                    grid-column-start: span 1;
+                }
+            } @else {
+                &.col-#{$i} {
+                    grid-column-start: span 2;
+                }
             }
         }
+
+        @media #{$landscape} {
+            grid-column: col-start / span 12;
+            @for $col from 1 through 12 {
+                &.col-#{$col} {
+                    grid-column-start: span $col;
+                }
+            }
+        }
+
     }
 }
 
