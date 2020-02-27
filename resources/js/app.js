@@ -28,6 +28,12 @@ let app = new Vue({
 
             let endPoint = `/content/${this.type.post_key}`;
 
+            console.log(this.post);
+
+            if(!isNewPost) {
+                endPoint = `/content/${this.type.post_key}/edit/${this.post.id}`;
+            }
+
             axios.post(endPoint, this.post).then(response => {
                 
             });

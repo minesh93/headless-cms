@@ -38,7 +38,7 @@ class PostController extends Controller
         $post->type = $type;
 
         if($id != null) {
-            $post = \App\Post::find($id);
+            $post = Post::find($id);
             $post->mapContent();
             $data['title'] = "Editing {$post->name}";
             $data['mapped_content'] = $post->mappedContent;
@@ -58,6 +58,10 @@ class PostController extends Controller
 
         $post = new Post();
 
+        if($id) {
+            $post = Post::find($id);
+        }
+
         $post->type = $type;
         $post->name = $request->input('name');
         $post->key = $request->input('key');
@@ -65,6 +69,15 @@ class PostController extends Controller
         $post->published_at = now();
 
         $post->save();
+
+        $contentKeys = collect(app('headless')->types->{$type}->content)->pluck('key');
+
+        foreach ($contentKeys as $key) {
+            $content = $post->getContentByKey($key) ?? new Content();
+            $content->content = $request->input('content')[$key];
+            $content->content_key = $key;
+            $post->content()->save($content);
+        }
 
         return $post;
     }

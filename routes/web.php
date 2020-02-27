@@ -22,3 +22,4 @@ Route::get('/content/{type}/new','Admin\PostController@edit');
 Route::get('/content/{type}/edit/{id}','Admin\PostController@edit');
 
 Route::post('/content/{type}/','Admin\PostController@update');
+Route::post('/content/{type}/edit/{id}','Admin\PostController@update');

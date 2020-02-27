@@ -32041,6 +32041,12 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       }
 
       var endPoint = "/content/".concat(this.type.post_key);
+      console.log(this.post);
+
+      if (!isNewPost) {
+        endPoint = "/content/".concat(this.type.post_key, "/edit/").concat(this.post.id);
+      }
+
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(endPoint, this.post).then(function (response) {});
     }
   }
