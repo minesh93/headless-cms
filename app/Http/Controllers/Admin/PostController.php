@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\Content;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -18,7 +19,7 @@ class PostController extends Controller
         $this->middleware('auth');
     }
 
-    public function new(Request $request, $type = 'page', $id = null)
+    public function edit(Request $request, $type = 'page', $id = null)
     {
         $types = app('headless')->types;
         $selectedType = $types->{$type} ?? null;
@@ -28,22 +29,29 @@ class PostController extends Controller
             abort(404);
         }
 
-        $title = '';
+        $data = [
+            'type' => $selectedType,
+            'title' => "New {$selectedType->name_singular}"
+        ];
 
-        if($id == null) {
-            $title = "New {$selectedType->name_singular}"; 
-            $post = new Post();
-        }
+        $post = new Post();
+        $post->type = $type;
 
-        if($id == null) {
+        if($id != null) {
+            $post = \App\Post::find($id);
+            $post->mapContent();
+            $data['title'] = "Editing {$post->name}";
+            $data['mapped_content'] = $post->mappedContent;
+        } else {
+            $post->mapContent();
+            $data['mapped_content'] = $post->mappedContent;
             $post = (object) [];
         }
 
-        return view('admin.post-create-edit', [
-            'type' => $selectedType,
-            'title' => $title,
-            'post' => $post
-        ]);
+        // dd($data);
+        $data['post'] = $post;
+
+        return view('admin.post-create-edit', $data);
     }
 
     public function update(Request $request, $type = 'page', $id = null) {

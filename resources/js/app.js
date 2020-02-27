@@ -1,4 +1,5 @@
 require('./bootstrap');
+require('./components/component');
 
 import Vue from 'vue';
 import axios from 'axios';
@@ -11,6 +12,10 @@ let app = new Vue({
             post: window._POST,
             type: window._TYPE
         }
+    },
+
+    created() {
+        this.post.content = window._CONTENT;
     },
 
     methods: {

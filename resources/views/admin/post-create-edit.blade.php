@@ -56,6 +56,7 @@
 <script type="text/javascript">
     window._POST = @json($post);
     window._TYPE = @json($type);
+    window._CONTENT = @json($mapped_content);
 </script>
 
 <script src="{{ mix('/js/app.js') }}"></script>

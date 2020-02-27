@@ -1,52 +1,19 @@
-basic post content
 <div class="grid">
+
     <div class="col col-2">
-        <div class="input-wrap">
-            <label>Label</label>
-            <input type="text"/>
-        </div>
+        <v-input label="Label" placeholder="Placeholder" type="text" v-model="post.content.post_content.test1"></v-input>
     </div>
-    <div class="col col-1">
-        <div class="input-wrap">
-            <label>Label</label>
-            <input type="text"/>
-        </div>
-    </div>
-    <div class="col col-3">
-        <div class="input-wrap">
-        <label>Label</label>
-            <input type="text"/>
-            <span class="description">Description below</span>
-        </div>
-    </div>
+
     <div class="col col-4">
-        <div class="input-wrap">
-            <label>Label</label>
-            <span class="description">Or description below.</span>
-            <textarea></textarea>
-        </div>
+        <v-input label="Label" placeholder="Test" type="text"></v-input>
     </div>
-    <div class="col col-2">
-        <div class="input-wrap">
-            <label>Label</label>
-            <input type="text"/>
-        </div>
+
+    <div class="col col-4">
+        <v-textarea></v-textarea>
     </div>
+
     <div class="col col-2">
-        <div class="check-wrap">
-            <h2>Checkbox</h2>
-            <div class="check-wrap">
-                <label for="check-1">
-                    <input type="checkbox" id="check-1"> <span>Option 1</span>
-                </label>
-                <label for="check-2">
-                    <input type="checkbox" id="check-2"> <span>Option 2</span>
-                </label>
-                <label for="check-3">
-                    <input type="checkbox" id="check-3"> <span>Option 3</span>
-                </label>
-            </div>
-        </div>
+        <v-input label="Label 1" type="text" description="Description below"></v-input>
     </div>
 
     <div class="col col-3">
