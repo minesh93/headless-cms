@@ -5,9 +5,7 @@
     <div id="app">
         <div class="grid">
             <div class="col col-9">
-                <div class="input-wrap">
-                    <input type="text" placeholder="Title" v-model="post.name"/>
-                </div>
+                <v-input placeholder="Title" type="text" v-model="post.name"></v-input>
 
                 <div class="post-content-wrap">
                     @if(isset($type->content))
@@ -24,12 +22,7 @@
                     <div class="section">
                         <div class="grid">
                             <div class="col col-12">
-                                <div class="input-wrap">
-                                    <label>Key</label>
-                                    <div class="input-fix">
-                                        <input type="text" placeholder="Key" v-model="post.key"/>
-                                    </div>
-                                </div>
+                                <v-input id="post-key" :prefix="type.key" placeholder="Key" type="text" v-model="post.key"></v-input>
                             </div>
                             <div class="col col-6">
                                 <div class="input-wrap">

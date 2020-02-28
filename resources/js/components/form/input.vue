@@ -1,7 +1,10 @@
 <template>
-    <div class="input-wrap" :class="layout">
-        <label v-bind:for="attributes.id" v-if="layout != 'large'">{{ label }}</label>
-        <input v-model="model" v-bind="attributes" ref="input"/>
+    <div class="input-wrap" :class="{ layout, 'has-prefix' : prefix }">
+        <label :for="attributes.id" v-if="layout != 'large'">{{ label }}</label>
+        <div class="input-itself-wrap">
+            <div class="prefix" v-if="prefix" :for="attributes.id">{{ prefix }}</div>
+            <input v-model="model" :id="attributes.id" v-bind="attributes" ref="input"/>
+        </div>
         <span class="description" v-if="description">{{ description }}</span>
     </div>
 </template>
@@ -16,6 +19,10 @@ export default {
         maxlength: Number,
         label: String,
         placeholder: String,
+        prefix: {
+            type: String,
+            default: ''
+        },
         description: {
             type: String,
             default: ''
@@ -50,7 +57,6 @@ export default {
             return {
                 ...this.$attrs,
                 type: this.type,
-                id: this.id,
                 name: this.name,
                 disabled: this.disabled,
                 required: this.required,

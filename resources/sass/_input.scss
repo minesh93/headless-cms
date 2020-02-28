@@ -80,6 +80,26 @@ label {
         color: $base;
         margin: 0.2rem 0;
     }
+
+    &.has-prefix {
+        input {
+            border-radius: 0 0.2rem;
+        }
+    }
+}
+
+.input-itself-wrap {
+    display: flex;
+
+    .prefix {
+        background: #fefefe;
+        font-family: "Nunito";
+        height: 4rem;
+        line-height: 4.1rem;
+        padding: 0 0.2rem 0 0.5rem;
+        color: $light-base-1;
+        border-radius: 0.2rem 0 0 0.2rem;
+    }
 }
 
 

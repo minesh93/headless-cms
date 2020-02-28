@@ -238,6 +238,25 @@ label {
   margin: 0.2rem 0;
 }
 
+.input-wrap.has-prefix input,
+.check-wrap.has-prefix input {
+  border-radius: 0 0.2rem;
+}
+
+.input-itself-wrap {
+  display: flex;
+}
+
+.input-itself-wrap .prefix {
+  background: #fefefe;
+  font-family: "Nunito";
+  height: 4rem;
+  line-height: 4.1rem;
+  padding: 0 0.2rem 0 0.5rem;
+  color: #8a8a89;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
 .form-wrap {
   display: grid;
   grid-gap: 2rem;
